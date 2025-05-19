@@ -28,11 +28,7 @@ Built with **Spring Boot (Java)** and **React**, this project follows best pract
  
 ---
  
-## ⚙️ Project Structure
- 
-expense-tracker/ ├── backend/ │ ├── controller/ │ ├── model/ │ ├── repository/ │ ├── service/ │ ├── security/ │ ├── dto/ │ └── application.properties ├── frontend/ │ ├── src/ │ │ ├── components/ │ │ ├── pages/ │ │ ├── services/ │ │ └── App.js └── README.md
- 
----
+
  
 ## 🔐 Authentication
  
@@ -98,29 +94,4 @@ Mobile App (React Native)
  
 ---
  
-🧪 Sample Database Schema (MySQL)
- 
-CREATE TABLE users (
-  id BIGINT AUTO_INCREMENT PRIMARY KEY,
-  username VARCHAR(50) UNIQUE NOT NULL,
-  password VARCHAR(255) NOT NULL
-);
- 
-CREATE TABLE expenses (
-  id BIGINT AUTO_INCREMENT PRIMARY KEY,
-  user_id BIGINT NOT NULL,
-  amount DECIMAL(10,2),
-  category VARCHAR(100),
-  description TEXT,
-  date DATE,
-  FOREIGN KEY (user_id) REFERENCES users(id)
-);
- 
- 
----
- 
-📂 Postman Collection
- 
-A Postman collection with sample requests for all APIs is included in the /postman/ExpenseTracker.postman_collection.json file.
- 
- 
+
